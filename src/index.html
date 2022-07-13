@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gallery</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-slate-200">
+  <main>
+    <div class="container mx-auto">
+      <header class="flex justify-between py-4 px-8 text-lg">
+          <!-- Navbar -->
+          <a href="#" class="tracking-widest"></a>
+          <ul class="hidden md:flex flex-row gap-5 items-center align-middle">
+            <li><a href="#" class="bg-red-600 text-white py-2 px-3 rounded-md hover:bg-red-500 active:bg-red-700">Home</a></li>
+            <li><a href="#" class="py-2 px-3 rounded-md hover:bg-zinc-400 hover:text-white active:bg-red-700 active:text-white">About</a></li>
+            <li><a href="#" class="py-2 px-3 rounded-md hover:bg-zinc-400 hover:text-white active:bg-red-700 active:text-white">Contact</a></li>
+          </ul>
+          <!-- Hamburger Menu -->
+          <button class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </header>
+      </div>
+      <!-- Main -->
+      <div class="container mx-auto">
+        <div class="py-4 px-8 grid md:grid-cols-2 sm:grid-cols-1 gap-10">
+          <div class="p-10 flex flex-col justify-center">
+            <h1 class="md:text-5xl sm:text-5xl font-bold tracking-widest">THE GALLERY</h1>
+            <h4 class="mt-5 text-gray-600 md:text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h4>
+            <form action="#" class="mt-10">
+              <label for="email-address-icon" class="block mb-2 text-sm font-medium text-gray-600 dark:text-gray-300">Subscribe to our Newsletter</label>
+              <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                </div>
+                <input type="text" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@domain.com">
+              </div>
+              <div class="mt-3 flex flex-row float-right">
+                <button type="button" class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-4 py-1 mr-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900">Subscribe</button>
+              </div>
+            </form>
+          </div>
+          <div class="py-4 px-4 flex flex-col justify-center">
+            <img src="https://picsum.photos/id/1064/536/354" alt="image dashboard" class="rounded-md shadow-lg">
+          </div>
+        </div>
+      </div>
+      <!-- Parallax -->
+      <div class="m-0 w-full h-96 bg-fixed bg-cover bg-center flex justify-center items-center"
+        style="background-image:url(https://picsum.photos/id/1061/1024/1024)">
+      </div>
+      <!-- Grids -->
+      <div class="container mx-auto">
+        <div class="py-4 px-8 grid md:grid-cols-3 sm:grid-cols-2 gap-3">
+        <!-- Cards -->
+        <div class="bg-white rounded-md py-4 px-4 border-2">
+          <!-- Card Header -->
+          <h2 class="tracking-widest text-sm mb-1">CARD 1</h2>
+          <h1 class="text-lg text-gray-400 mb-3">Image 1</h1>
+          <!-- Card Body -->
+          <img src="https://picsum.photos/id/10/400/300" alt="image 1" class="mx-auto mb-5">
+          <p class="leading-relaxed text-sm text-justify indent-5 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum quas deleniti provident aperiam. Minima molestiae ut eius, natus voluptatum nisi doloribus, voluptates ipsa accusamus, dolore praesentium? Vel, harum quae.</p>
+          <button class="bg-red-600 text-sm text-white rounded-md px-4 py-1 hover:bg-red-500 active:bg-red-700 active:text-white focus:outline-none focus:ring focus:ring-red-300"><i class="fa fa-search"></i> View</button>
+        </div>
+        <div class="bg-white rounded-md py-4 px-4 border-2">
+          <!-- Card Header -->
+          <h2 class="tracking-widest text-sm mb-1">CARD 2</h2>
+          <h1 class="text-lg text-gray-400 mb-3">Image 2</h1>
+          <!-- Card Body -->
+          <img src="https://picsum.photos/id/100/400/300" alt="image 2" class="mx-auto mb-5">
+          <p class="leading-relaxed text-sm text-justify indent-5 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum quas deleniti provident aperiam. Minima molestiae ut eius, natus voluptatum nisi doloribus, voluptates ipsa accusamus, dolore praesentium? Vel, harum quae.</p>
+          <button class="bg-red-600 text-sm text-white rounded-md px-4 py-1 hover:bg-red-500 active:bg-red-700 active:text-white focus:outline-none focus:ring focus:ring-red-300"><i class="fa fa-search"></i> View</button>
+        </div>
+        <div class="bg-white rounded-md py-4 px-4 border-2">
+          <!-- Card Header -->
+          <h2 class="tracking-widest text-sm mb-1">CARD 3</h2>
+          <h1 class="text-lg text-gray-400 mb-3">Image 3</h1>
+          <!-- Card Body -->
+          <img src="https://picsum.photos/id/1000/400/300" alt="image 3" class="mx-auto mb-5">
+          <p class="leading-relaxed text-sm text-justify indent-5 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum quas deleniti provident aperiam. Minima molestiae ut eius, natus voluptatum nisi doloribus, voluptates ipsa accusamus, dolore praesentium? Vel, harum quae.</p>
+          <button class="bg-red-600 text-sm text-white rounded-md px-4 py-1 hover:bg-red-500 active:bg-red-700 active:text-white focus:outline-none focus:ring focus:ring-red-300"><i class="fa fa-search"></i> View</button>
+        </div>
+        <div class="bg-white rounded-md py-4 px-4 border-2">
+          <!-- Card Header -->
+          <h2 class="tracking-widest text-sm mb-1">CARD 4</h2>
+          <h1 class="text-lg text-gray-400 mb-3">Image 4</h1>
+          <!-- Card Body -->
+          <img src="https://picsum.photos/id/1002/400/300" alt="image 3" class="mx-auto mb-5">
+          <p class="leading-relaxed text-sm text-justify indent-5 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum quas deleniti provident aperiam. Minima molestiae ut eius, natus voluptatum nisi doloribus, voluptates ipsa accusamus, dolore praesentium? Vel, harum quae.</p>
+          <button class="bg-red-600 text-sm text-white rounded-md px-4 py-1 hover:bg-red-500 active:bg-red-700 active:text-white focus:outline-none focus:ring focus:ring-red-300"><i class="fa fa-search"></i> View</button>
+        </div>
+        <div class="bg-white rounded-md py-4 px-4 border-2">
+          <!-- Card Header -->
+          <h2 class="tracking-widest text-sm mb-1">CARD 5</h2>
+          <h1 class="text-lg text-gray-400 mb-3">Image 5</h1>
+          <!-- Card Body -->
+          <img src="https://picsum.photos/id/1006/400/300" alt="image 3" class="mx-auto mb-5">
+          <p class="leading-relaxed text-sm text-justify indent-5 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum quas deleniti provident aperiam. Minima molestiae ut eius, natus voluptatum nisi doloribus, voluptates ipsa accusamus, dolore praesentium? Vel, harum quae.</p>
+          <button class="bg-red-600 text-sm text-white rounded-md px-4 py-1 hover:bg-red-500 active:bg-red-700 active:text-white focus:outline-none focus:ring focus:ring-red-300"><i class="fa fa-search"></i> View</button>
+        </div>
+        <div class="bg-white rounded-md py-4 px-4 border-2">
+          <!-- Card Header -->
+          <h2 class="tracking-widest text-sm mb-1">CARD 6</h2>
+          <h1 class="text-lg text-gray-400 mb-3">Image 6</h1>
+          <!-- Card Body -->
+          <img src="https://picsum.photos/id/1011/400/300" alt="image 3" class="mx-auto mb-5">
+          <p class="leading-relaxed text-sm text-justify indent-5 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit illum quas deleniti provident aperiam. Minima molestiae ut eius, natus voluptatum nisi doloribus, voluptates ipsa accusamus, dolore praesentium? Vel, harum quae.</p>
+          <button class="bg-red-600 text-sm text-white rounded-md px-4 py-1 hover:bg-red-500 active:bg-red-700 active:text-white focus:outline-none focus:ring focus:ring-red-300"><i class="fa fa-search"></i> View</button>
+        </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <div class="container mx-auto">
+        <footer class="flex flex-col items-center justify-center py-20">
+          <p>Made with <i class="fa fa-sm fa-heart text-red-600"></i> by Christian</p>
+          <ul class="flex flex-row justify-center items-center gap-10 mt-5">
+            <li><a href="#"><i class="fa-brands fa-xl fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-xl fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-xl fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-xl fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+  </main>
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
